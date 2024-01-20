@@ -10,16 +10,21 @@
 
 <body>
     <h1>Todo App</h1>
-
+    <div class="alert" id="alert"></div>
     <div class="container-app">
         <div class="container-tittle">
             <h3 class="titulo-app">Lista de tareas</h3>
         </div>
-        <div class="container-tareas" id="container-tareas">        
+        <div class="container-tareas" id="container-tareas">
+            <div class="container-tarea-individual" id="mostrar-tarea">
+            </div>     
         </div>
         <div class="controles">
             <div>
                 <input type="text" class="contendor-textUser" id="textUser">
+            </div>
+            <div>
+                <input type="time" name="hora" id="hora-tarea">
             </div>
             <div>
                 <input type="button" value="añadir tarea" class="boton-enviar-textUser" id="botton-enviar">
