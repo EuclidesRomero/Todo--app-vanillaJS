@@ -4,11 +4,9 @@ import {validarCampos} from './validarCampos.js'
 
 let tareas = [];
 const botonEnviar = document.getElementById('botton-enviar')
-
-
 function verificarEstado(){
   let estado = document.getElementById('estado-tarea')
-  tareas.length> 0 ? estado.textContent = 'Estas son tus tareas pendientes': estado.textContent;
+    tareas.length> 0 ? estado.textContent = 'Estas son tus tareas pendientes': estado.textContent= 'No tienes tareas pendientes'; 
 }
 
 botonEnviar.addEventListener("click", function () {
@@ -16,10 +14,10 @@ botonEnviar.addEventListener("click", function () {
   let horaTarea = document.getElementById("hora-tarea").value;
   if (!validarCampos(textoUsuario, horaTarea)) {
     tareas.push({ name: textoUsuario, hora: horaTarea, id: generarId()});
-    /* setTimeout(() => {
+    setTimeout(() => {
       document.getElementById("textUser").value = " ";
-    }, 3000);
-    mostrarTareas(); */
+    }, 6000);
+    mostrarTareas(); 
   }
   
   mostrarTareas()
@@ -57,7 +55,6 @@ function mostrarTareas(){
 
     botonEliminar.addEventListener('click', function() {
       const tareaId = this.getAttribute('data-tarea-id');
-      console.log('ID de la tarea a eliminar:', tareaId);
       Eliminar(tareaId)
       verificarEstado();
     });

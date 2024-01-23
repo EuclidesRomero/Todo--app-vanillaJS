@@ -99,3 +99,15 @@ h3 {
 .hora-tarea{
     border: 1px solid black;
 }
+
+.titulo-app{
+    color: black;
+}
+
+.titulo-principal{
+    background: #000;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
