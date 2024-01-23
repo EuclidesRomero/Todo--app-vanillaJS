@@ -5,7 +5,7 @@ export function validarCampos(nombre, hora) {
       contendorALerta.style.backgroundColor = "red";
       let mensaje = document.createElement("p");
       mensaje.style.color = "white";
-      mensaje.textContent = "Todos los campos son obligatorios";
+      mensaje.textContent = "Upss! debes llenar los campos de la tarea";
       contendorALerta.appendChild(mensaje);
       setTimeout(() => {
         mensaje.textContent = " ";
@@ -18,7 +18,7 @@ export function validarCampos(nombre, hora) {
       contendorALerta.style.backgroundColor = "blue";
       let mensaje = document.createElement("p");
       mensaje.style.color = "white";
-      mensaje.textContent = "tarea añadida con exito";
+      mensaje.textContent = "Añadiste una tarea con exito";
       contendorALerta.appendChild(mensaje);
       setTimeout(() => {
         mensaje.textContent = " ";

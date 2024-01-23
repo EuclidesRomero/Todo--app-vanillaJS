@@ -3,6 +3,7 @@ import {botonEliminarStyle, horaContenedorStyle,nuevoElementoStyle } from './mod
 import {validarCampos} from './validarCampos.js'
 
 let tareas = [];
+
 const botonEnviar = document.getElementById('botton-enviar')
 function verificarEstado(){
   let estado = document.getElementById('estado-tarea')
