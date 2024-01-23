@@ -8,6 +8,8 @@ h3 {
     margin: 0; 
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: larger;
 }
 
 
@@ -39,11 +41,14 @@ h3 {
 .container-tareas{
     width: 100%;
     height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 
 }
 
@@ -66,7 +71,13 @@ h3 {
 .boton-enviar-textUser{
     margin-right: 40px;
     border-radius: 10px;
+    color: white;
+    background-color: black;
 }
+.boton-enviar-textUser:hover {
+    cursor: pointer;
+}
+
 
 .container-tarea-individual{
     width: 100%;
@@ -87,5 +98,4 @@ h3 {
 
 .hora-tarea{
     border: 1px solid black;
-    border-radius: 20px ;
 }
