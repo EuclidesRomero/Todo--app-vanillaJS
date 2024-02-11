@@ -3,6 +3,9 @@ h1{
     font-family: 'Courier New', Courier, monospace;
 }
 
+body{
+    background-color: rgb(20, 13, 11);
+}
 
 h3 {
     margin: 0; 
@@ -23,6 +26,7 @@ h3 {
     margin: 0 auto;
     border: 1px solid black;
     border-radius: 10px;
+    background-color: #55B7CF;
    
    
 }
@@ -36,6 +40,7 @@ h3 {
     justify-content: center;
     margin-bottom: 20px;
     margin-top: 0;
+    
 }
 
 .container-tareas{
@@ -48,7 +53,6 @@ h3 {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    
 
 }
 
@@ -71,8 +75,8 @@ h3 {
 .boton-enviar-textUser{
     margin-right: 40px;
     border-radius: 10px;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
 }
 .boton-enviar-textUser:hover {
     cursor: pointer;
@@ -105,9 +109,8 @@ h3 {
 }
 
 .titulo-principal{
-    background: #000;
     padding-top: 20px;
     width: 100%;
     text-align: center;
-    color: white;
+    color:white;
 }

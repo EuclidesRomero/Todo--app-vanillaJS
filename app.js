@@ -15,9 +15,6 @@ botonEnviar.addEventListener("click", function () {
   let horaTarea = document.getElementById("hora-tarea").value;
   if (!validarCampos(textoUsuario, horaTarea)) {
     tareas.push({ name: textoUsuario, hora: horaTarea, id: generarId()});
-    setTimeout(() => {
-      document.getElementById("textUser").value = " ";
-    }, 6000);
     mostrarTareas(); 
   }
   

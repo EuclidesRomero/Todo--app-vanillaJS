@@ -9,7 +9,7 @@ export function validarCampos(nombre, hora) {
       contendorALerta.appendChild(mensaje);
       setTimeout(() => {
         mensaje.textContent = " ";
-        contendorALerta.style.backgroundColor = "white";
+        contendorALerta.style.backgroundColor = "rgb(20, 13, 11)";
       }, 3000);
       return true;
     } 
@@ -22,7 +22,7 @@ export function validarCampos(nombre, hora) {
       contendorALerta.appendChild(mensaje);
       setTimeout(() => {
         mensaje.textContent = " ";
-        contendorALerta.style.backgroundColor = "white";
+        contendorALerta.style.backgroundColor = "rgb(20, 13, 11)";
       }, 3000);
       return false;
     }
