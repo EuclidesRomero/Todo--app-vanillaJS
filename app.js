@@ -29,6 +29,7 @@ function mostrarTareas(){
   let contenedorTareas = document.getElementById("mostrar-tarea")
   contenedorTareas.style.marginLeft = '5px';
   contenedorTareas.style.marginRight = '5px';
+  contenedorTareas.style.marginLeft='20px';
   contenedorTareas.innerHTML = '';
   
   tareas.map(tarea => {
